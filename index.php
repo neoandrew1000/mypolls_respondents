@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!--
++++подключение fullpage.js
 +++подключение шрифтов
 ___базовое форматирование
 ___базовые заливки и фоны
@@ -27,6 +28,21 @@ ___тестирование
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>	
 </head>
+
+	<script>
+		jQuery(document).ready(function($) {
+			$("#fullpage").fullpage({
+				sectionsColor:['white','#5c717c','white','#ffea00','white','#484848','white'],
+				anchors:['fistPage','secondPage','3rdPage','4thPage','5thPage','6thPage','7thPage'],
+				menu:'#menu',
+				scrollBar:false,
+				//scrollOverflow:true,
+				loopBottom:true,	
+			});
+		});	
+	</script>
+
+
 <body>
 	<nav id="wrapMenu">
 		<!-- Логотип с названием слева -->
@@ -41,6 +57,15 @@ ___тестирование
 			<li class="registration"><button onClick="getElementById('modalRegistration').removeAttribute('style');" type="button">Регистрация</button></li>
 		</ul>
 	</nav>	
+	<div id="fullpage">
+		<div class="section" id="section1"></div>
+		<div class="section" id="section2"></div>
+		<div class="section" id="section3"></div>
+		<div class="section" id="section4"></div>
+		<div class="section" id="section5"></div>
+		<div class="section" id="section6"></div>
+		<div class="section" id="section7"></div>
+	</div>
 	
 </body>
 </html>
