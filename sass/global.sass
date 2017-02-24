@@ -1,0 +1,66 @@
+// global.sass
+
+$yellow: #ffea00
+$d-yellow: #bca71a
+$red: #ff0000
+$d-d-gray: #191919
+$d-gray: #525252
+$gray: #6c6c66
+$l-gray: #a7a7a7
+$l-l-gray: #f2f3f1
+$l-l-l-gray: #f8f8f8
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic-ext');
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol
+  	margin:  0
+  	padding: 0
+  	font-family: 'Roboto', arial
+  	font-weight: 300 
+  	color: $d-gray
+
+
+h1
+	font-size: 350%
+h2
+	font-size: 300%
+h3
+	font-size: 220%
+h4
+	font-size: 180%
+h5
+	font-size: 140%
+ul
+	list-style: none
+
+a
+	text-decoration: none
+	color: $d-d-gray
+	line-height: 1
+  display: inline-block
+  cursor: pointer
+
+a:after
+    display: block;
+    content: ""
+    height: 1px
+    width: 0%
+    background-color: $d-d-gray
+    transition: width .3s ease-in-out
+
+a:hover:after,
+a:focus:after
+    width: 100%
+
+
+
+
+
