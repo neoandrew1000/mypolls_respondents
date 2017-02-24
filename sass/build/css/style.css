@@ -59,7 +59,9 @@ a:focus:after {
   /* Safari */
   display: flex;
   /*отображает контейнер как блочный элемент*/
-  align-content: flex-start; }
+  align-content: flex-start;
+  background-image: url(../../../img/sl1img1.jpg);
+  background-size: cover; }
 
 #wrapMenu {
   width: 100%;
@@ -82,7 +84,8 @@ a:focus:after {
   /* Safari */
   display: flex;
   /*отображает контейнер как блочный элемент*/
-  list-style: none; }
+  list-style: none;
+  align-items: center; }
   .menu li {
     padding: 25px;
     color: white;
@@ -90,6 +93,14 @@ a:focus:after {
 
 #leftMenu {
   margin-left: 5%; }
+  #leftMenu div {
+    background-image: url(../../../svg/logo.svg);
+    width: 60px;
+    height: 60px; }
+  #leftMenu li:nth-child(1) {
+    padding-right: 8px; }
+  #leftMenu li:nth-child(2) {
+    padding-left: 0; }
 
 #rightMenu {
   margin-right: 5%; }
