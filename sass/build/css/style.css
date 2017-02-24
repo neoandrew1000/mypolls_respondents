@@ -55,13 +55,32 @@ a:focus:after {
 .sectionWrap {
   width: 100%;
   height: 100%;
-  display: -webkit-flex;
-  /* Safari */
-  display: flex;
-  /*отображает контейнер как блочный элемент*/
-  align-content: flex-start;
   background-image: url(../../../img/sl1img1.jpg);
   background-size: cover; }
+  .sectionWrap .baseUl {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    /*отображает контейнер как блочный элемент*/
+    align-items: center;
+    flex-direction: column; }
+  .sectionWrap .menuLi {
+    width: 100%;
+    margin-bottom: 130px; }
+  .sectionWrap h1,
+  .sectionWrap h2,
+  .sectionWrap h3,
+  .sectionWrap h4,
+  .sectionWrap h5 {
+    color: white; }
+  .sectionWrap h1 {
+    font-size: 460%;
+    font-weight: 900;
+    margin: -2px 0 40px 0; }
+  .sectionWrap h3 {
+    font-weight: 100; }
 
 #wrapMenu {
   width: 100%;

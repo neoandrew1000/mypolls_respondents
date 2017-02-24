@@ -47,21 +47,29 @@ ___тестирование
 	<div id="fullpage">
 		<div class="section" id="section1">
 			<div class="sectionWrap">
-				<div id="wrapMenu">
-					<nav id="baseMenu"> <!-- конфликт, если прописать просто id="menu". не нашел в чем причина =( -->
-						<!-- Логотип с названием слева -->
-					    <ul class="menu" id="leftMenu">
-						    <li><div></div></li>
-						    <li><a href="http">MyPolls.ru</a></li>
-						</ul>
-						<!-- Меню справа -->
-						<ul class="menu" id="rightMenu">
-							<li class="redirect"><a href="http">Вход для создателей</a></li>
-							<li class="login"><a href="http">Войти</a></li>
-							<li class="registration"><button onClick="getElementById('modalRegistration').removeAttribute('style');" type="	button">		Регистрация</button></li>
-						</ul>
-					</nav>	
-				</div>
+				<ul class="baseUl">
+					<li class="menuLi">
+						<div id="wrapMenu">
+							<nav id="baseMenu"> <!-- конфликт, если прописать просто id="menu". не нашел в чем причина =( -->
+								<!-- Логотип с названием слева -->
+							    <ul class="menu" id="leftMenu">
+								    <li><div></div></li>
+								    <li><a href="http">MyPolls.ru</a></li>
+								</ul>
+								<!-- Меню справа -->
+								<ul class="menu" id="rightMenu">
+									<li class="redirect"><a href="http">Вход для создателей</a></li>
+									<li class="login"><a href="http">Войти</a></li>
+									<li class="registration"><button onClick="getElementById('modalRegistration').removeAttribute('style');" type="	button">		Регистрация</button></li>
+								</ul>
+							</nav>	
+						</div>
+					</li>
+					<li><h5>Сообщество свободного мнения. Оценивайте и выражайте свою точку зрения</h3></li>
+					<li><h1>УЧАСТИЕ В ОНЛАЙН-ОПРОСАХ</h1></li>
+					<li><h3>Присоединяйтесь, 9999 человек уже с нами</h2></li>
+					<li></li>
+				</ul>
 			</div>
 		</div>
 		<div class="section" id="section2"></div>
