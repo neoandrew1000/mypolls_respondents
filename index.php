@@ -4,8 +4,8 @@
 <!--
 +++подключение fullpage.js
 +++подключение шрифтов
-___базовое форматирование
-___базовые заливки и фоны
++++базовое форматирование
++++базовые заливки и фоны
 +__меню переключения
 ___svg
 ___img
@@ -32,7 +32,7 @@ ___тестирование
 	<script>
 		jQuery(document).ready(function($) {
 			$("#fullpage").fullpage({
-				sectionsColor:['white','#5c717c','white','#ffea00','white','#484848','white'],
+				sectionsColor:['gray','white','white','white','white','dimgray','gray'],
 				anchors:['fistPage','secondPage','3rdPage','4thPage','5thPage','6thPage','7thPage'],
 				menu:'#menu',
 				scrollBar:false,
