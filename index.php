@@ -6,7 +6,7 @@
 +++подключение шрифтов
 +++базовое форматирование
 +++базовые заливки и фоны
-+__меню переключения
++++меню 
 ___svg
 ___img
 ___текст
@@ -44,21 +44,26 @@ ___тестирование
 
 
 <body>
-	<nav id="wrapMenu">
-		<!-- Логотип с названием слева -->
-	    <ul class="menu" id="logo">
-		    <li><!-- LOGO SVG --></li>
-		    <li><!-- LOGO DOMEN NAME --></li>
-		</ul>
-		<!-- Меню справа -->
-		<ul class="menu" id="rightMenu">
-			<li class="redirect"><a href="http">Вход для создателей</a></li>
-			<li class="login"><a href="http">Войти</a></li>
-			<li class="registration"><button onClick="getElementById('modalRegistration').removeAttribute('style');" type="button">Регистрация</button></li>
-		</ul>
-	</nav>	
 	<div id="fullpage">
-		<div class="section" id="section1"></div>
+		<div class="section" id="section1">
+			<div class="sectionWrap">
+				<div id="wrapMenu">
+					<nav id="baseMenu"> <!-- конфликт, если прописать просто id="menu". не нашел в чем причина =( -->
+						<!-- Логотип с названием слева -->
+					    <ul class="menu" id="logo">
+						    <li>SVG LOGO</li>
+						    <li><a href="http">MyPolls.ru</a></li>
+						</ul>
+						<!-- Меню справа -->
+						<ul class="menu" id="rightMenu">
+							<li class="redirect"><a href="http">Вход для создателей</a></li>
+							<li class="login"><a href="http">Войти</a></li>
+							<li class="registration"><button onClick="getElementById('modalRegistration').removeAttribute('style');" type="	button">		Регистрация</button></li>
+						</ul>
+					</nav>	
+				</div>
+			</div>
+		</div>
 		<div class="section" id="section2"></div>
 		<div class="section" id="section3"></div>
 		<div class="section" id="section4"></div>
