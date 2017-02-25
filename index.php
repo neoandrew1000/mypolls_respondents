@@ -8,9 +8,9 @@
 +++базовые заливки и фоны
 +++меню 
 +__svg
-+__img
+++_img
 ___текст
-+__верстка
+++_верстка
 ___тестирование
 ___постобработка, анимация
 ___добавление форм
@@ -136,7 +136,24 @@ ___тестирование
 				</ul>
 			</div>
 		</div>
-		<div class="section" id="section4"></div>
+		<div class="section" id="section4">
+			<ul class="verticalFlex" id="baseSection4Ul">
+				<li class="hr"><div></div></li>
+				<li class="textSection4"><p>Многим компаниям необходимо получать свежую<br> информацию о своих покупателях: настоящих или <br>будущих; тестировать новинки; продвигать бренды;<br> улучшать сферу услуг. Для этого они выбирают нас.</p></li>
+				<li class="numberOfResp">
+					<ul class="horizontalFlex">
+						<li><img src="img/color1.png" alt=""></li>
+						<li>
+							<ul class="verticalFlex">
+								<li><p><b>9999</b> респондентов <br> пользуются <u>MyPolls.ru!</u></p></li>
+								<li class="hr"><div></div></li>
+							</ul>
+						</li>
+						<li><img src="img/color2.png" alt=""></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 		<div class="section" id="section5"></div>
 		<div class="section" id="section6"></div>
 		<div class="section" id="section7"></div>

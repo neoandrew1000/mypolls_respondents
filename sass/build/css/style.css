@@ -89,7 +89,7 @@ a:focus:after {
   /* Safari */
   display: flex;
   /*отображает контейнер как блочный элемент*/
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 #wrapMenu {
   width: 100%;
@@ -174,10 +174,6 @@ a:focus:after {
   width: 90%; }
 
 #section2 {
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  /* Old browsers */
   background: -moz-linear-gradient(top, #ffffff 0%, #EFEFEF 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #ffffff 0%, #EFEFEF 100%);
@@ -186,10 +182,6 @@ a:focus:after {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
 #section3 {
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  /* Old browsers */
   background: -moz-linear-gradient(top, #EFEFEF 0%, #e5e5e5 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #EFEFEF 0%, #e5e5e5 100%);
@@ -198,22 +190,35 @@ a:focus:after {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
 #section4 {
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  /* Old browsers */
   background: -moz-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #e5e5e5 0%, #EFEFEF 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  #section4 .numberOfResp {
+    width: 100%; }
+  #section4 #baseSection4Ul {
+    justify-content: flex-end;
+    margin-top: 40px; }
+  #section4 .horizontalFlex {
+    justify-content: space-between; }
+  #section4 p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 220%;
+    padding-bottom: 7px; }
+  #section4 .hr {
+    width: 100px; }
+    #section4 .hr div {
+      height: 1px;
+      border-top: solid 1px #191919; }
+  #section4 img {
+    width: 400px; }
+  #section4 .textSection4 {
+    width: 80%; }
 
 #section5 {
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  /* Old browsers */
   background: -moz-linear-gradient(top, #EFEFEF 0%, #ffffff 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #EFEFEF 0%, #ffffff 100%);
