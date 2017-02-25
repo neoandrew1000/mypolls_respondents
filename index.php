@@ -8,9 +8,9 @@
 +++базовые заливки и фоны
 +++меню 
 +__svg
-___img
++__img
 ___текст
-___верстка
++__верстка
 ___тестирование
 ___постобработка, анимация
 ___добавление форм
@@ -47,10 +47,10 @@ ___тестирование
 	<div id="fullpage">
 		<div class="section" id="section1">
 			<div class="sectionWrap">
-				<ul class="baseUl">
+				<ul class="verticalFlex">
 					<li class="menuLi">
 						<div id="wrapMenu">
-							<nav id="baseMenu"> <!-- конфликт, если прописать просто id="menu". не нашел в чем причина =( -->
+							<nav class="horizontalFlex" id="baseMenu"> <!-- конфликт, если прописать просто id="menu". не нашел в чем причина =( -->
 								<!-- Логотип с названием слева -->
 							    <ul class="menu" id="leftMenu">
 								    <li><div></div></li>
@@ -72,8 +72,70 @@ ___тестирование
 				</ul>
 			</div>
 		</div>
-		<div class="section" id="section2"></div>
-		<div class="section" id="section3"></div>
+		<div class="section" id="section2">
+			<ul class="verticalFlex">
+				<li><h2>В каких опросах Вы будете участвовать</h2></li>
+				<li class="verticalFlex" id="verticalWrapUl">					
+					<ul class="horizontalFlex" id="horizontalWrapUl">
+						<li>							
+							<ul class="verticalFlex">
+								<li class="verticalFlex"><img src="img/sl2img1.jpg" alt=""></li>
+								<li>
+									
+									<ul class="verticalFlex">
+										<li><h3>Тестирование</h3></li>
+										<li><h5>товаров, продуктов, услуг,<br> сервисов, рекламы, сайтов</h5></li>
+									</ul>	
+
+								</li>
+							</ul>
+
+						</li>
+						<li>							
+							<ul class="verticalFlex">
+								<li class="verticalFlex"><img src="img/sl2img2.jpg" alt=""></li>
+								<li>
+									
+									<ul class="verticalFlex">
+										<li><h3>Профессиональные опросы</h3></li>
+										<li><h5>для маркетологов, hr-специалистов, врачей,<br> преподавателей, госслужащих и др.</h5></li>
+									</ul>									
+
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="section" id="section3">	
+			<div class="verticalFlex">				
+				<ul class="horizontalFlex" id="horizontalWrapUl">
+					<li>							
+						<ul class="verticalFlex">
+							<li class="verticalFlex"><img src="img/sl3img1.jpg" alt=""></li>
+							<li>
+								<ul class="verticalFlex">
+									<li><h3>Создание научных работ</h3></li>
+									<li><h5>по экономике, сельскому хозяйству, праву,<br>социологии и пр.</h5></li>
+								</ul>	
+							</li>
+						</ul>
+					</li>
+					<li>							
+						<ul class="verticalFlex">
+							<li class="verticalFlex"><img src="img/sl3img2.jpg" alt=""></li>
+							<li>
+								<ul class="verticalFlex">
+									<li><h3>Возникновение новых брендов</h3></li>
+									<li><h5>названий, слоганов, товаров, <br>предложений и услуг</h5></li> <!-- количесвто строк у h5 должно быть отдинаковое количество -->
+								</ul>								
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<div class="section" id="section4"></div>
 		<div class="section" id="section5"></div>
 		<div class="section" id="section6"></div>
