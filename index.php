@@ -7,12 +7,12 @@
 +++базовое форматирование
 +++базовые заливки и фоны
 +++меню 
-+__svg
-++_img
-___текст
-++_верстка
-___тестирование
-___постобработка, анимация
++++svg
++++img
++++текст
++++верстка
++++тестирование
++++постобработка, анимация
 ___добавление форм
 ___стили форм
 ___тестирование
@@ -38,6 +38,43 @@ ___тестирование
 				scrollBar:false,
 				//scrollOverflow:true,
 				loopBottom:true,	
+				afterLoad:function(link,index) {
+					if(index == 1) {
+						$("#section1").animate({'opacity':'1'},700);
+					}
+					if(index == 2) {
+						$("#section2 h2").animate({'opacity':'1'},300);
+						$("#section2 img").animate({'opacity':'1'},600);
+						$("#section2 h3").animate({'opacity':'1'},600);
+						$("#section2 h5").animate({'opacity':'1'},900);
+					}
+					if(index == 3) {
+						$("#section3 img").animate({'opacity':'1'},400);
+						$("#section3 h3").animate({'opacity':'1'},800);
+						$("#section3 h5").animate({'opacity':'1'},900);
+					}		
+					if(index == 4) {
+						$("#section4 p").animate({'opacity':'1'},300);
+						$("#section4 .hr").animate({'opacity':'1'},900);
+						$("#section4 img").animate({'opacity':'1'},1600);
+					}	
+					if(index == 5) {
+						$("#section5 h1").animate({'opacity':'1'},300);
+						$("#section5 .arrow").animate({'opacity':'1'},400);
+						$("#section5 #centerUl").animate({'opacity':'1'},500);
+						$("#section5 .wrapLiSection5").animate({'width':'80%'},600);
+					}	
+					if(index == 6) {
+						$("#section6 h3").animate({'opacity':'1'},300);
+						$("#section6 .hr").animate({'opacity':'1'},800);
+						$("#section6 p").animate({'opacity':'1'},500);
+					}						
+
+				}
+
+
+
+
 			});
 		});	
 	</script>
@@ -108,7 +145,7 @@ ___тестирование
 				</li>
 			</ul>
 		</div>
-		<div class="section" id="section3">	
+		<div class="section" id="section3">
 			<div class="verticalFlex">				
 				<ul class="horizontalFlex" id="horizontalWrapUl">
 					<li>							
@@ -154,8 +191,43 @@ ___тестирование
 				</li>
 			</ul>
 		</div>
-		<div class="section" id="section5"></div>
-		<div class="section" id="section6"></div>
+		<div class="section" id="section5">
+			<ul class="verticalFlex">
+				<li><h1>Это очень просто</h1></li>
+				<li><img src="svg/arrow.svg" alt="" class="arrow"></li>
+				<li class="wrapLiSection5">
+					<ul class="horizontalFlex">
+						<li>
+							<ul class="verticalFlex">
+								<li><img src="svg/icon1.svg" alt=""></li>
+								<li><p><a href="">Зарегистрируйтесь</a> и заполните ваш<br> профиль полностью<br> на 100%</p></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="verticalFlex" id="centerUl">
+								<li><img src="svg/icon2.svg" alt=""></li>
+								<li><p>Заполните анкеты:<br> приглашения к опросам<br> будут приходить на почту <br> и в личный кабинет</p></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="verticalFlex">
+								 <li><img src="svg/icon3.svg" alt=""></li>
+								<li><p>Вам начисляется <br> денежное вознограждение<br> за заполнение каждой<br> анкеты</p></li>
+							</ul>
+						</li>
+					</ul>
+
+				</li>
+			</ul>
+		</div>
+		<div class="section" id="section6">
+			<ul class="verticalFlex">
+				<li><h3>ОЧЕНЬ ВЫГОДНО</h3></li>
+				<li class="hr"><div></div></li>
+				<li><p>Стандартная анкета в среднем занимает 5-7 минут вашего времени и приносит от 15 и более рублей дохода. Согласитесь, очень удобно: в перерывах между основными делами еще и зарабатывать?</p></li>
+				<li class="hr"><div></div></li>
+			</ul>
+		</div>
 		<div class="section" id="section7"></div>
 	</div>
 	
