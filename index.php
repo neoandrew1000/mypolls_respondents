@@ -1,3 +1,8 @@
+<?php
+
+	require_once ('core/init.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,6 +81,32 @@ ___тестирование
 
 
 			});
+
+			// скрипт отправки формы без ребута страницы
+		$('#register-form').on('submit', function(e) {
+        	e.preventDefault();
+        	$.ajax({
+            	url : 'register.php',
+           		type: "POST",
+           		dataType:'json',
+            	data: $(this).serialize(),
+            	success: function (data) {
+
+            		if (data === "true"){
+
+            			$("#response").html("Вы зарегестрированы и теперь можете войти!");
+            			$("#register-form").remove();
+
+            		}else{
+            			
+                		$("#response").html(data);
+                	}
+            	},
+            	error: function (jXHR, textStatus, errorThrown) {
+                	alert(errorThrown);
+            	}
+        	});
+    	});
 		});	
 	</script>
 
@@ -92,7 +123,45 @@ ___тестирование
           		<!-- поле для ответа от сервера -->
           	   <div id = "response">
           	   </div>
-           		
+          	   <form id= "register-form">
+					<form id= "register-form">
+					<div class="field">
+						<label for = "usrnam">Username</label>
+						<input type="text" name="usrnam" id="usrnam" value="<?php echo escape(Input::get("usrnam"))?>" autocomplete="off" >
+					</div>
+
+					<div class="field">
+						<label for ="password">Password</label>
+						<input type ="password" name="password" id="password"> characters and numbers
+					</div>	
+					
+					<div class="field">
+						<label for ="password_again">Password Again</label>
+						<input type ="password" name="password_again" id="password_again">
+					</div>	
+
+					<div class="field">
+						<label for ="frname">Frst name</label>
+						<input type ="text" name="frname" id="frname" value="<?php echo escape(Input::get("frname"))?>">
+					</div>	
+
+					<div class="field">
+						<label for ="lsname">Last name</label>
+						<input type ="text" name="lsname" id="lsname" value="<?php echo escape(Input::get("lsname"))?>">
+					</div>	
+
+					<div class="field">
+						<label for ="eml">Email</label>
+						<input type ="text" name="eml" id="eml" value="<?php echo escape(Input::get("eml"))?>" >test@test.com
+					</div>	
+
+				 	<div class="field">
+						<label for ="phne">Phone +7</label>
+						<input type ="text" name="phne" id="phne" value="<?php echo escape(Input::get("phne"))?>">1231231231
+					</div>
+					<input type = "hidden" name = "token" value="<?php echo escape(Session::get('token')) ?>">
+					<input type ="submit" value = "register">
+				</form>	      		
           	</div>
         </div>
     </div>
