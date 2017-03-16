@@ -81,6 +81,23 @@ ___тестирование
 
 
 <body>
+
+<!-- модальное окно регистрации -->
+<div id="modalRegistration" style="display:none;">
+   	<div class="overlay">
+     	<div class="visible">
+     	<button type="button" onClick="getElementById('modalRegistration').style.display='none';">закрыть</button>
+       	<h2>Заголовок окна</h2>
+          	<div class="content">
+          		<!-- поле для ответа от сервера -->
+          	   <div id = "response">
+          	   </div>
+           		
+          	</div>
+        </div>
+    </div>
+</div>
+
 	<div id="fullpage">
 		<div class="section" id="section1">
 			<div class="sectionWrap">
@@ -105,7 +122,7 @@ ___тестирование
 					<li><h5>Сообщество свободного мнения. Оценивайте и выражайте свою точку зрения</h3></li>
 					<li><h1>УЧАСТИЕ В ОНЛАЙН-ОПРОСАХ</h1></li>
 					<li><h3>Присоединяйтесь, 9999 человек уже с нами</h2></li>
-					<li></li>
+					<li>       </li>
 				</ul>
 			</div>
 		</div>
