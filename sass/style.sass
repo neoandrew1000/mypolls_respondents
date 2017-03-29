@@ -32,16 +32,28 @@
 .verticalFlex
 	width: 100%
 	height: 100%
-	display: -webkit-flex; /* Safari */
-	display: flex; /*отображает контейнер как блочный элемент*/		
-	align-items: center
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex			
+	-webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+	-webkit-flex-direction: column
+	-ms-flex-direction: column
 	flex-direction: column	
 
 .horizontalFlex
 	width: 100%
-	display: -webkit-flex; /* Safari */
-	display: flex; /*отображает контейнер как блочный элемент*/	
-	justify-content: space-between
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex		
+	-webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
 
 #wrapMenu
 	width: 100%
@@ -55,10 +67,15 @@
 		background-color: white
 
 .menu
-	display: -webkit-flex; /* Safari */
-	display: flex; /*отображает контейнер как блочный элемент*/
-	list-style: none;
-	align-items: center
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex		
+	list-style: none
+	-webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
 
 	li
 		padding: 25px
@@ -116,7 +133,7 @@
 		opacity: 0
 
 	h2
-		margin-top: 15px
+		margin: 40px
 
 	h3
 		margin-top: 20px
@@ -127,7 +144,9 @@
 		opacity: 0
 
 	.verticalFlex
-		justify-content: center
+		-webkit-justify-content: center
+        -ms-flex-pack: center
+        justify-content: center
 
 	#verticalWrapUl
 		height: 80%
@@ -139,11 +158,17 @@
 	background: -moz-linear-gradient(top, #ffffff 0%, #EFEFEF 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #ffffff 0%,#EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #ffffff 0%,#EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	#verticalWrapUl
+		height: auto
+	.verticalFlex
+		height: auto	
 
 #section3
 	background: -moz-linear-gradient(top, #EFEFEF 0%, #e5e5e5 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #EFEFEF 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #EFEFEF 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
+	.verticalFlex
+		height: auto
 
 #section4
 	background: -moz-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* FF3.6-15 */
@@ -154,11 +179,15 @@
 		width: 100%
 
 	#baseSection4Ul
-		justify-content: flex-end
+		-webkit-justify-content: flex-end
+        -ms-flex-pack: end
+        justify-content: flex-end
 		margin-top: 40px
 
 	.horizontalFlex
-		justify-content: space-between
+		-webkit-justify-content: space-between
+        -ms-flex-pack: justify
+        justify-content: space-between
 
 
 	p
@@ -201,7 +230,9 @@
 		opacity: 0
 
 	.verticalFlex
-		justify-content: space-around
+		-webkit-justify-content: space-around
+        -ms-flex-pack: distribute
+        justify-content: space-around
 		.horizontalFlex
 			padding-bottom: 70px
 
@@ -233,7 +264,9 @@
 		width: 130px
 
 	.verticalFlex
-		justify-content: space-around	
+		-webkit-justify-content: space-around
+        -ms-flex-pack: distribute
+        justify-content: space-around	
 		height: 60%
 	
 	li:nth-child(3)

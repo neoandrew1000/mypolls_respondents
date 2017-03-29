@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic-ext");
 html,
 body,
@@ -79,20 +78,28 @@ a:focus:after {
 .verticalFlex {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  /* Safari */
   display: flex;
-  /*отображает контейнер как блочный элемент*/
-  align-items: center;
+  -webkit-align-items: center;
+    -webkit-align-items--ms-flex-align: center;
+    -webkit-align-items-align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column; }
 
 .horizontalFlex {
   width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  /* Safari */
   display: flex;
-  /*отображает контейнер как блочный элемент*/
-  justify-content: space-between; }
+  -webkit-justify-content: space-between;
+    -webkit-justify-content--ms-flex-pack: justify;
+    -webkit-justify-content-justify-content: space-between; }
 
 #wrapMenu {
   width: 100%;
@@ -105,12 +112,15 @@ a:focus:after {
   background-color: white; }
 
 .menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  /* Safari */
   display: flex;
-  /*отображает контейнер как блочный элемент*/
   list-style: none;
-  align-items: center; }
+  -webkit-align-items: center;
+    -webkit-align-items--ms-flex-align: center;
+    -webkit-align-items-align-items: center; }
   .menu li {
     padding: 25px;
     color: white;
@@ -161,7 +171,7 @@ a:focus:after {
 
 #section2 h2,
 #section3 h2 {
-  margin-top: 15px; }
+  margin: 40px; }
 
 #section2 h3,
 #section3 h3 {
@@ -175,7 +185,9 @@ a:focus:after {
 
 #section2 .verticalFlex,
 #section3 .verticalFlex {
-  justify-content: center; }
+  -webkit-justify-content: center;
+    -webkit-justify-content--ms-flex-pack: center;
+    -webkit-justify-content-justify-content: center; }
 
 #section2 #verticalWrapUl,
 #section3 #verticalWrapUl {
@@ -192,6 +204,10 @@ a:focus:after {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  #section2 #verticalWrapUl {
+    height: auto; }
+  #section2 .verticalFlex {
+    height: auto; }
 
 #section3 {
   background: -moz-linear-gradient(top, #EFEFEF 0%, #e5e5e5 100%);
@@ -200,6 +216,8 @@ a:focus:after {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #EFEFEF 0%, #e5e5e5 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  #section3 .verticalFlex {
+    height: auto; }
 
 #section4 {
   background: -moz-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%);
@@ -211,10 +229,14 @@ a:focus:after {
   #section4 .numberOfResp {
     width: 100%; }
   #section4 #baseSection4Ul {
-    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+      -webkit-justify-content--ms-flex-pack: end;
+      -webkit-justify-content-justify-content: flex-end;
     margin-top: 40px; }
   #section4 .horizontalFlex {
-    justify-content: space-between; }
+    -webkit-justify-content: space-between;
+      -webkit-justify-content--ms-flex-pack: justify;
+      -webkit-justify-content-justify-content: space-between; }
   #section4 p {
     text-align: center;
     font-weight: 300;
@@ -249,7 +271,9 @@ a:focus:after {
     width: 800px;
     opacity: 0; }
   #section5 .verticalFlex {
-    justify-content: space-around; }
+    -webkit-justify-content: space-around;
+      -webkit-justify-content--ms-flex-pack: distribute;
+      -webkit-justify-content-justify-content: space-around; }
     #section5 .verticalFlex .horizontalFlex {
       padding-bottom: 70px; }
 
@@ -273,7 +297,9 @@ a:focus:after {
   #section6 .hr:nth-child(2) {
     width: 130px; }
   #section6 .verticalFlex {
-    justify-content: space-around;
+    -webkit-justify-content: space-around;
+      -webkit-justify-content--ms-flex-pack: distribute;
+      -webkit-justify-content-justify-content: space-around;
     height: 60%; }
   #section6 li:nth-child(3) {
     width: 65%; }
