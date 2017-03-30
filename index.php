@@ -204,7 +204,7 @@ ___тестирование
 						<li>							
 							<ul class="verticalFlex">
 								<li class="verticalFlex"><img src="img/sl2img1.jpg" alt=""></li>
-								<li>
+								<li class="verticalFlexMargin">
 									
 									<ul class="verticalFlex">
 										<li><h3>Тестирование</h3></li>
@@ -218,7 +218,7 @@ ___тестирование
 						<li>							
 							<ul class="verticalFlex">
 								<li class="verticalFlex"><img src="img/sl2img2.jpg" alt=""></li>
-								<li>
+								<li class="verticalFlexMargin">
 									
 									<ul class="verticalFlex">
 										<li><h3>Профессиональные опросы</h3></li>
@@ -238,7 +238,7 @@ ___тестирование
 					<li>							
 						<ul class="verticalFlex">
 							<li class="verticalFlex"><img src="img/sl3img1.jpg" alt=""></li>
-							<li>
+							<li class="verticalFlexMargin">
 								<ul class="verticalFlex">
 									<li><h3>Создание научных работ</h3></li>
 									<li><h5>по экономике, сельскому хозяйству, праву,<br>социологии и пр.</h5></li>
@@ -249,7 +249,7 @@ ___тестирование
 					<li>							
 						<ul class="verticalFlex">
 							<li class="verticalFlex"><img src="img/sl3img2.jpg" alt=""></li>
-							<li>
+							<li class="verticalFlexMargin">
 								<ul class="verticalFlex">
 									<li><h3>Возникновение новых брендов</h3></li>
 									<li><h5>названий, слоганов, товаров, <br>предложений и услуг</h5></li> <!-- количесвто строк у h5 должно быть отдинаковое количество -->
@@ -279,7 +279,7 @@ ___тестирование
 			</ul>
 		</div>
 		<div class="section" id="section5">
-			<ul class="verticalFlex">
+			<ul class="verticalFlex" id="baseSection5Ul">
 				<li><h1>Это очень просто</h1></li>
 				<li><img src="svg/arrow.svg" alt="" class="arrow"></li>
 				<li class="wrapLiSection5">

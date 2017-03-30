@@ -1,55 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic-ext");
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', arial;
-  font-weight: 300;
-  color: #525252; }
-
-h1 {
-  font-size: 350%; }
-
-h2 {
-  font-size: 300%; }
-
-h3 {
-  font-size: 220%; }
-
-h4 {
-  font-size: 180%; }
-
-h5 {
-  font-size: 140%; }
-
-ul {
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  color: #191919;
-  line-height: 1;
-    line-height-display: inline-block;
-    line-height-cursor: pointer; }
-
-a:after {
-  display: block;
-  content: "";
-  height: 1px;
-  width: 0%;
-  background-color: #191919;
-  transition: width .3s ease-in-out; }
-
-a:hover:after,
-a:focus:after {
-  width: 100%; }
+@media screen and (max-width: 1980px) {
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', arial;
+    font-weight: 300;
+    color: #525252; }
+  h1 {
+    font-size: 350%; }
+  h2 {
+    font-size: 300%; }
+  h3 {
+    font-size: 220%; }
+  h4 {
+    font-size: 180%; }
+  h5 {
+    font-size: 140%; }
+  ul {
+    list-style: none; }
+  a {
+    text-decoration: none;
+    color: #191919;
+    line-height: 1;
+      line-height-display: inline-block;
+      line-height-cursor: pointer; }
+  a:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: #191919;
+    transition: width .3s ease-in-out; }
+  a:hover:after,
+  a:focus:after {
+    width: 100%; } }
 
 @media screen and (max-width: 1980px) {
   #section1 {
@@ -305,3 +297,51 @@ a:focus:after {
       margin: 5% 30%;
       background-color: white;
       color: #191919; } }
+
+@media screen and (max-width: 1279px) {
+  .sectionWrap h1 {
+    font-size: 360%; }
+  .sectionWrap .menuLi {
+    margin-bottom: 180px; }
+  #section2 h2,
+  #section3 h2 {
+    font-size: 220%; }
+  #section2 h3,
+  #section3 h3 {
+    font-size: 170%; }
+  #section2 p,
+  #section3 p {
+    font-size: 120%; }
+  #section2 .verticalFlexMargin,
+  #section3 .verticalFlexMargin {
+    margin-top: 20px; }
+  #section4 #baseSection4Ul {
+    margin-top: 0px; }
+  #section4 p {
+    font-size: 190%; }
+  #section5 p {
+    text-align: center;
+    font-size: 130%; }
+  #section5 img {
+    width: 180px; }
+  #section5 #baseSection5Ul {
+    height: 90%; }
+  #section5 .arrow {
+    width: 650px; }
+  /*#modalRegistration
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/ }
