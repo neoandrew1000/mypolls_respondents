@@ -26,6 +26,7 @@ ___тестирование
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	<title></title>
 	<link rel="stylesheet" href="sass/build/css/jquery.fullpage.css" />
 	<link rel="stylesheet" href="sass/build/css/style.css" />

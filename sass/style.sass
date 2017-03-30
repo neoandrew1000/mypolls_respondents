@@ -1,316 +1,321 @@
 // style.sass
 @import global.sass
 
-#section1
-	opacity: 0
 
-.sectionWrap
-	width: 100%
-	height: 100%
-	background-image: url(../../../img/sl1img1.jpg)
-	background-size: cover
+@media screen and (max-width: 1980px)
 
-	.menuLi
-		width: 100%	
-		margin-bottom: 130px
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5
-		color: white
-
-	h1
-		font-size: 460%
-		font-weight: 900
-		margin: -2px 0 40px 0
-	
-	h3
-		font-weight: 100
-
-.verticalFlex
-	width: 100%
-	height: 100%
-	display: -webkit-box
-	display: -moz-box
-	display: -ms-flexbox
-	display: -webkit-flex
-	display: flex			
-	-webkit-align-items: center
-    -ms-flex-align: center
-    align-items: center
-	-webkit-flex-direction: column
-	-ms-flex-direction: column
-	flex-direction: column	
-
-.horizontalFlex
-	width: 100%
-	display: -webkit-box
-	display: -moz-box
-	display: -ms-flexbox
-	display: -webkit-flex
-	display: flex		
-	-webkit-justify-content: space-between
-    -ms-flex-pack: justify
-    justify-content: space-between
-
-#wrapMenu
-	width: 100%
-	height: 100px
-
-#baseMenu
-	a
-		color: white
-
-	a:after
-		background-color: white
-
-.menu
-	display: -webkit-box
-	display: -moz-box
-	display: -ms-flexbox
-	display: -webkit-flex
-	display: flex		
-	list-style: none
-	-webkit-align-items: center
-    -ms-flex-align: center
-    align-items: center
-
-	li
-		padding: 25px
-		color: white
-		font-size: 120%
-
-#leftMenu
-	margin-left: 5%
-
-	div
-		background-image: url(../../../svg/logo.svg)
-		width: 60px
-		height: 60px
-
-	li:nth-child(1)
-		padding-right: 8px
-
-	li:nth-child(2)
-		padding-left: 0
-
-#rightMenu
-	margin-right: 5%
-
-	.registration
-		border: solid 1px white
-		padding: 4px 9px 5px 9px
-		margin: 21px 16px 20px 16px
-
-		button
-			background-color: transparent
-			border: none
-			color: white
-			font-weight: 100
-			font-size: 100%		
-
-		button:hover
-			font-weight: 100
-
-.hr
-	width: 100px
-	opacity: 0
-
-	div
-		height: 1px
-		border-top: solid 1px $d-d-gray
-
-#section2,
-#section3
-
-	h2,
-	h3,
-	h5
-		font-weight: 100
-		text-align: center
+	#section1
 		opacity: 0
 
-	h2
-		margin: 40px
-
-	h3
-		margin-top: 20px
-		font-weight: 300
-
-	img
-		width: 80%
-		opacity: 0
-
-	.verticalFlex
-		-webkit-justify-content: center
-        -ms-flex-pack: center
-        justify-content: center
-
-	#verticalWrapUl
-		height: 80%
-
-	#horizontalWrapUl
-		width: 90%	
-	
-#section2
-	background: -moz-linear-gradient(top, #ffffff 0%, #EFEFEF 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 0%,#EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	#verticalWrapUl
-		height: auto
-	.verticalFlex
-		height: auto	
-
-#section3
-	background: -moz-linear-gradient(top, #EFEFEF 0%, #e5e5e5 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #EFEFEF 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #EFEFEF 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-	.verticalFlex
-		height: auto
-
-#section4
-	background: -moz-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #e5e5e5 0%, #EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-
-	.numberOfResp
-		width: 100%
-
-	#baseSection4Ul
-		-webkit-justify-content: flex-end
-        -ms-flex-pack: end
-        justify-content: flex-end
-		margin-top: 40px
-
-	.horizontalFlex
-		-webkit-justify-content: space-between
-        -ms-flex-pack: justify
-        justify-content: space-between
-
-
-	p
-		text-align: center
-		font-weight: 300
-		font-size: 220%
-		padding-bottom: 7px
-		opacity: 0
-	
-	img
-		width: 400px
-		opacity: 0
-
-	.textSection4
-		width: 80%
-
-#section5
-	background: -moz-linear-gradient(top, #EFEFEF 0%, #ffffff 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #EFEFEF 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #EFEFEF 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	
-	h1
-		opacity: 0
-
-	p
-		text-align: center
-		font-size: 180%
-
-	img
-		width: 160px
-
-	.wrapLiSection5
-		width: 200%
-
-	#centerUl
-		opacity: 0
-
-	.arrow
-		width: 800px
-		opacity: 0
-
-	.verticalFlex
-		-webkit-justify-content: space-around
-        -ms-flex-pack: distribute
-        justify-content: space-around
-		.horizontalFlex
-			padding-bottom: 70px
-
-#section6
-	width: 100%
-	height: 100%	
-	background-image: url(../../../img/sl6img1.jpg)	
-	background-size: cover	
-	
-	h3
-		color: white
-		font-weight: 400
-		opacity: 0
-
-
-	p
-		text-align: center
-		font-size: 180%	
-		color: white
-		font-weight: 300
-		opacity: 0
-
-	.hr
-
-		div
-			border-top: solid 1px white
-	
-	.hr:nth-child(2)
-		width: 130px
-
-	.verticalFlex
-		-webkit-justify-content: space-around
-        -ms-flex-pack: distribute
-        justify-content: space-around	
-		height: 60%
-	
-	li:nth-child(3)
-		width: 65%
-
-#section7
-	width: 100%
-	height: 100%	
-	background-image: url(../../../img/sl7img1.jpg)	
-	background-size: cover	
-	background-position: center
-
-#modalRegistration	
-	position: fixed
-	z-index: 9999
-	width: 100%
-	height: 100%	
-	.overlay
-		background-color: rgba(54,54,54,.9)
+	.sectionWrap
 		width: 100%
 		height: 100%
-		margin: 0
+		background-image: url(../../../img/sl1img1.jpg)
+		background-size: cover
+
+		.menuLi
+			width: 100%	
+			margin-bottom: 130px
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5
+			color: white
+
+		h1
+			font-size: 460%
+			font-weight: 900
+			margin: -2px 0 40px 0
+		
+		h3
+			font-weight: 100
+
+	.verticalFlex
+		width: 100%
+		height: 100%
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex			
+		-webkit-align-items: center
+	    -ms-flex-align: center
+	    align-items: center
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column	
+
+	.horizontalFlex
+		width: 100%
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex		
+		-webkit-justify-content: space-between
+	    -ms-flex-pack: justify
+	    justify-content: space-between
+
+	#wrapMenu
+		width: 100%
+		height: 100px
+
+	#baseMenu
+		a
+			color: white
+
+		a:after
+			background-color: white
+
+	.menu
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex		
+		list-style: none
+		-webkit-align-items: center
+	    -ms-flex-align: center
+	    align-items: center
+
+		li
+			padding: 25px
+			color: white
+			font-size: 120%
+
+	#leftMenu
+		margin-left: 5%
+
+		div
+			background-image: url(../../../svg/logo.svg)
+			width: 60px
+			height: 60px
+
+		li:nth-child(1)
+			padding-right: 8px
+
+		li:nth-child(2)
+			padding-left: 0
+
+	#rightMenu
+		margin-right: 5%
+
+		.registration
+			border: solid 1px white
+			padding: 4px 9px 5px 9px
+			margin: 21px 16px 20px 16px
+
+			button
+				background-color: transparent
+				border: none
+				color: white
+				font-weight: 100
+				font-size: 100%		
+
+			button:hover
+				font-weight: 100
+
+	.hr
+		width: 100px
+		opacity: 0
+
+		div
+			height: 1px
+			border-top: solid 1px $d-d-gray
+
+	#section2,
+	#section3
+
+		h2,
+		h3,
+		h5
+			font-weight: 100
+			text-align: center
+			opacity: 0
+
+		h2
+			margin: 40px
+
+		h3
+			margin-top: 20px
+			font-weight: 300
+
+		img
+			width: 80%
+			opacity: 0
+
+		.verticalFlex
+			-webkit-justify-content: center
+	        -ms-flex-pack: center
+	        justify-content: center
+
+		#verticalWrapUl
+			height: 80%
+
+		#horizontalWrapUl
+			width: 90%	
+		
+	#section2
+		background: -moz-linear-gradient(top, #ffffff 0%, #EFEFEF 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffffff 0%,#EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffffff 0%,#EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		#verticalWrapUl
+			height: auto
+		.verticalFlex
+			height: auto	
+
+	#section3
+		background: -moz-linear-gradient(top, #EFEFEF 0%, #e5e5e5 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #EFEFEF 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #EFEFEF 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
+		.verticalFlex
+			height: auto
+
+	#section4
+		background: -moz-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #e5e5e5 0%, #EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
+
+		.numberOfResp
+			width: 100%
+
+		#baseSection4Ul
+			-webkit-justify-content: flex-end
+	        -ms-flex-pack: end
+	        justify-content: flex-end
+			margin-top: 40px
+
+		.horizontalFlex
+			-webkit-justify-content: space-between
+	        -ms-flex-pack: justify
+	        justify-content: space-between
+
+
+		p
+			text-align: center
+			font-weight: 300
+			font-size: 220%
+			padding-bottom: 7px
+			opacity: 0
+		
+		img
+			width: 400px
+			opacity: 0
+
+		.textSection4
+			width: 80%
+
+	#section5
+		background: -moz-linear-gradient(top, #EFEFEF 0%, #ffffff 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #EFEFEF 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #EFEFEF 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		
+		h1
+			opacity: 0
+
+		p
+			text-align: center
+			font-size: 180%
+
+		img
+			width: 160px
+
+		.wrapLiSection5
+			width: 200%
+
+		#centerUl
+			opacity: 0
+
+		.arrow
+			width: 800px
+			opacity: 0
+
+		.verticalFlex
+			-webkit-justify-content: space-around
+	        -ms-flex-pack: distribute
+	        justify-content: space-around
+			.horizontalFlex
+				padding-bottom: 70px
+
+	#section6
+		width: 100%
+		height: 100%	
+		background-image: url(../../../img/sl6img1.jpg)	
+		background-size: cover	
+		
+		h3
+			color: white
+			font-weight: 400
+			opacity: 0
+
+
+		p
+			text-align: center
+			font-size: 180%	
+			color: white
+			font-weight: 300
+			opacity: 0
+
+		.hr
+
+			div
+				border-top: solid 1px white
+		
+		.hr:nth-child(2)
+			width: 130px
+
+		.verticalFlex
+			-webkit-justify-content: space-around
+	        -ms-flex-pack: distribute
+	        justify-content: space-around	
+			height: 60%
+		
+		li:nth-child(3)
+			width: 65%
+
+	#section7
+		width: 100%
+		height: 100%	
+		background-image: url(../../../img/sl7img1.jpg)	
+		background-size: cover	
+		background-position: center
+
+	#modalRegistration	
 		position: fixed
-	.visible
-		width: 40%
-		height: 80%
-		margin: 5% 30%
-		background-color: white
-		color: $d-d-gray
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray
 
 
+//@media screen and (max-width: 1279px)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+//@media screen and (max-width: 1024px)	
 	
+//@media screen and (max-width: 768px)
+	
+//@media screen and (max-width: 320px)
+	
+
+
+
+
+
+
+
+
+		
 
