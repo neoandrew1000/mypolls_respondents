@@ -2,7 +2,7 @@
 @import global.sass
 
 
-@media screen and (max-width: 1980px)
+@media (max-width: 1980px)
 
 	#section1
 		opacity: 0
@@ -31,6 +31,9 @@
 		
 		h3
 			font-weight: 100
+		
+		.titleText
+			text-align: center
 
 	.verticalFlex
 		width: 100%
@@ -300,8 +303,7 @@
 			background-color: white
 			color: $d-d-gray
 
-
-@media screen and (max-width: 1279px)
+@media (max-width: 1279px)
 
 	.sectionWrap
 
@@ -370,12 +372,138 @@
 			background-color: white
 			color: $d-d-gray*/
 
-//@media screen and (max-width: 1024px)	
+@media (orientation: landscape) and (max-width: 1024px)
+
+	.menu
+		li
+			font-size: 107%
+
+	.sectionWrap
+
+		h1
+			font-size: 260%
+		
+		.menuLi
+			margin-bottom: 80px	
+
+		h5
+			font-size: 190%	
+			margin: 50px 65px
+
+
+	#section2,
+	#section3
+
+		h2
+			font-size: 200%
+
+		h3
+			font-size: 150%
+
+		h5
+			font-size: 100%
+
+		.verticalFlexMargin
+			margin-top: 0px
+		
+	#section4
+
+		#baseSection4Ul
+			margin-top: 0px
+
+		p
+			font-size: 150%
+
+		img
+			width: 300px	
+			padding-top: 80px;
+
+
+	#section5
+
+		p
+			text-align: center
+			font-size: 105%
+
+		img
+			width: 150px
+
+		#baseSection5Ul
+			height: 85%
+
+		.arrow
+			width: 500px
+
+	#section6
+		width: 100%
+		height: 100%	
+		background-image: url(../../../img/sl6img1.jpg)	
+		background-size: cover	
+		
+		h3
+			color: white
+			font-weight: 400
+			opacity: 0
+
+
+		p
+			text-align: center
+			font-size: 180%	
+			color: white
+			font-weight: 300
+			opacity: 0
+
+		.hr
+
+			div
+				border-top: solid 1px white
+		
+		.hr:nth-child(2)
+			width: 130px
+
+		.verticalFlex
+			-webkit-justify-content: space-around
+	        -ms-flex-pack: distribute
+	        justify-content: space-around	
+			height: 60%
+		
+		li:nth-child(3)
+			width: 65%
+
+	#section7
+		width: 100%
+		height: 100%	
+		background-image: url(../../../img/sl7img1.jpg)	
+		background-size: cover	
+		background-position: center
+
+	#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray
+
+//@media (orientation: portrait) and (max-width: 1024px)
 	
-//@media screen and (max-width: 768px)
+//@media (orientation: landscape) and (max-width: 768px)
+
+//@media (orientation: portrait) and (max-width: 768px)
 	
-//@media screen and (max-width: 320px)
-	
+//@media (orientation: landscape) and (max-width: 320px)
+
+//@media (orientation: portrait) and (max-width: 320px)
 
 
 
