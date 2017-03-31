@@ -349,12 +349,16 @@
 			color: $d-d-gray*/ }
 
 @media (orientation: landscape) and (max-width: 1024px) {
+  .sectionWrap {
+    background-image: url(../../../img/sl1img1_dark.jpg); }
   .menu li {
     font-size: 107%; }
-  .sectionWrap h1 {
-    font-size: 260%; }
   .sectionWrap .menuLi {
     margin-bottom: 80px; }
+  .sectionWrap h1 {
+    font-size: 260%; }
+  .sectionWrap h3 {
+    font-weight: 200; }
   .sectionWrap h5 {
     font-size: 190%;
     margin: 50px 65px; }
@@ -386,52 +390,82 @@
     height: 85%; }
   #section5 .arrow {
     width: 500px; }
+  /*#modalRegistration
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/ }
+
+@media (orientation: landscape) and (max-width: 768px) {
+  #baseMenu {
+    margin-top: 10px; }
+  .sectionWrap {
+    background-image: url(../../../img/sl1img1_dark.jpg); }
+  .menu li {
+    font-size: 100%;
+    padding: 5px; }
+  #rightMenu {
+    margin-right: 1%; }
+  #leftMenu {
+    margin-left: 3%; }
+  .sectionWrap .menuLi {
+    margin-bottom: 0px; }
+  .sectionWrap h1 {
+    font-size: 170%; }
+  .sectionWrap h3 {
+    font-size: 120%;
+    font-weight: 300; }
+  .sectionWrap h5 {
+    font-size: 120%;
+    margin: 10px 80px; }
+  #section2 h2,
+  #section3 h2 {
+    font-size: 120%;
+    font-weight: 300;
+    margin: 0 0 20px 0; }
+  #section2 h3,
+  #section3 h3 {
+    font-size: 90%;
+    font-weight: 500; }
+  #section2 h5,
+  #section3 h5 {
+    font-size: 80%;
+    font-weight: 300; }
+  #section2 .verticalFlexMargin,
+  #section3 .verticalFlexMargin {
+    margin-top: 0px; }
+  #section4 #baseSection4Ul {
+    margin-top: 0px; }
+  #section4 p {
+    font-size: 100%; }
+  #section4 img {
+    width: 150px;
+    padding-top: 0px; }
+  #section5 p {
+    text-align: center;
+    font-size: 80%; }
+  #section5 img {
+    width: 120px; }
+  #section5 #baseSection5Ul {
+    height: 85%; }
+  #section5 .arrow {
+    width: 500px; }
+  #section5 .wrapLiSection5 {
+    height: 67%; }
   #section6 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../../img/sl6img1.jpg);
-    background-size: cover; }
-    #section6 h3 {
-      color: white;
-      font-weight: 400;
-      opacity: 0; }
+    background-image: url(../../../img/sl6img1_dark.jpg); }
     #section6 p {
-      text-align: center;
-      font-size: 180%;
-      color: white;
-      font-weight: 300;
-      opacity: 0; }
-    #section6 .hr div {
-      border-top: solid 1px white; }
-    #section6 .hr:nth-child(2) {
-      width: 130px; }
-    #section6 .verticalFlex {
-      -webkit-justify-content: space-around;
-        -webkit-justify-content--ms-flex-pack: distribute;
-        -webkit-justify-content-justify-content: space-around;
-      height: 60%; }
-    #section6 li:nth-child(3) {
-      width: 65%; }
-  #section7 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../../img/sl7img1.jpg);
-    background-size: cover;
-    background-position: center; }
-  #modalRegistration {
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    height: 100%; }
-    #modalRegistration .overlay {
-      background-color: rgba(54, 54, 54, 0.9);
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      position: fixed; }
-    #modalRegistration .visible {
-      width: 40%;
-      height: 80%;
-      margin: 5% 30%;
-      background-color: white;
-      color: #191919; } }
+      font-size: 140%;
+      font-weight: 400; } }
