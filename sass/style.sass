@@ -738,7 +738,9 @@
 
 	#section6
 		li:nth-child(3)
-			width: 75%		
+			width: 75%	
+		h3
+			margin-bottom: 40px	
 
 
 	#section7
@@ -766,7 +768,74 @@
 			background-color: white
 			color: $d-d-gray*/
 	
-//@media (max-width: 600px)
+@media (orientation: portrait) and (max-width: 600px)
+	.sectionWrap
+		h1
+			font-size: 360%
+			font-weight: 900
+			margin: 40px 40px
+		
+		h3
+			font-weight: 400
+			font-size: 200%
+			margin: 0 40px
+
+		h5
+			margin-top: 100px
+			font-size: 20%
+			margin: 10px 10px 0px 10px
+			visibility: hidden
+
+	.menu
+		li
+			font-size: 150%
+			padding: 10px
+
+	#section3
+		#horizontalWrapUl
+			margin-top: 35px		
+
+	#section4
+		#baseSection4Ul
+
+		p
+			font-size: 120%
+
+	#section5
+
+		img
+			width: 105px
+
+		.verticalFlex
+			.horizontalFlex
+				padding-top: 10px		
+
+	#section6
+		li:nth-child(3)
+			width: 75%	
+		h3
+			margin-bottom: 40px				
+
+	/*#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/
+
+//@media (orientation: portrait) and (max-width: 360px)
+
 
 
 
