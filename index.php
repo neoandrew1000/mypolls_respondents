@@ -26,6 +26,7 @@ ___тестирование
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	<title></title>
 	<link rel="stylesheet" href="sass/build/css/jquery.fullpage.css" />
 	<link rel="stylesheet" href="sass/build/css/style.css" />
@@ -188,9 +189,9 @@ ___тестирование
 							</nav>	
 						</div>
 					</li>
-					<li><h5>Сообщество свободного мнения. Оценивайте и выражайте свою точку зрения</h3></li>
-					<li><h1>УЧАСТИЕ В ОНЛАЙН-ОПРОСАХ</h1></li>
-					<li><h3>Присоединяйтесь, 9999 человек уже с нами</h2></li>
+					<li class="titleText"><h5>Сообщество свободного мнения. Оценивайте и выражайте свою точку зрения</h3></li>
+					<li class="titleText"><h1>УЧАСТИЕ В ОНЛАЙН-ОПРОСАХ</h1></li>
+					<li class="titleText"><h3>Присоединяйтесь, 9999 человек уже с нами</h2></li>
 					<li>       </li>
 				</ul>
 			</div>
@@ -203,7 +204,7 @@ ___тестирование
 						<li>							
 							<ul class="verticalFlex">
 								<li class="verticalFlex"><img src="img/sl2img1.jpg" alt=""></li>
-								<li>
+								<li class="verticalFlexMargin">
 									
 									<ul class="verticalFlex">
 										<li><h3>Тестирование</h3></li>
@@ -217,7 +218,7 @@ ___тестирование
 						<li>							
 							<ul class="verticalFlex">
 								<li class="verticalFlex"><img src="img/sl2img2.jpg" alt=""></li>
-								<li>
+								<li class="verticalFlexMargin">
 									
 									<ul class="verticalFlex">
 										<li><h3>Профессиональные опросы</h3></li>
@@ -237,7 +238,7 @@ ___тестирование
 					<li>							
 						<ul class="verticalFlex">
 							<li class="verticalFlex"><img src="img/sl3img1.jpg" alt=""></li>
-							<li>
+							<li class="verticalFlexMargin">
 								<ul class="verticalFlex">
 									<li><h3>Создание научных работ</h3></li>
 									<li><h5>по экономике, сельскому хозяйству, праву,<br>социологии и пр.</h5></li>
@@ -248,7 +249,7 @@ ___тестирование
 					<li>							
 						<ul class="verticalFlex">
 							<li class="verticalFlex"><img src="img/sl3img2.jpg" alt=""></li>
-							<li>
+							<li class="verticalFlexMargin">
 								<ul class="verticalFlex">
 									<li><h3>Возникновение новых брендов</h3></li>
 									<li><h5>названий, слоганов, товаров, <br>предложений и услуг</h5></li> <!-- количесвто строк у h5 должно быть отдинаковое количество -->
@@ -278,7 +279,7 @@ ___тестирование
 			</ul>
 		</div>
 		<div class="section" id="section5">
-			<ul class="verticalFlex">
+			<ul class="verticalFlex" id="baseSection5Ul">
 				<li><h1>Это очень просто</h1></li>
 				<li><img src="svg/arrow.svg" alt="" class="arrow"></li>
 				<li class="wrapLiSection5">

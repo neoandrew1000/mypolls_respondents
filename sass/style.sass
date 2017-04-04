@@ -1,283 +1,947 @@
 // style.sass
 @import global.sass
 
-#section1
-	opacity: 0
+@media (max-width: 1980px)
 
-.sectionWrap
-	width: 100%
-	height: 100%
-	background-image: url(../../../img/sl1img1.jpg)
-	background-size: cover
-
-	.menuLi
-		width: 100%	
-		margin-bottom: 130px
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5
-		color: white
-
-	h1
-		font-size: 460%
-		font-weight: 900
-		margin: -2px 0 40px 0
-	
-	h3
-		font-weight: 100
-
-.verticalFlex
-	width: 100%
-	height: 100%
-	display: -webkit-flex; /* Safari */
-	display: flex; /*отображает контейнер как блочный элемент*/		
-	align-items: center
-	flex-direction: column	
-
-.horizontalFlex
-	width: 100%
-	display: -webkit-flex; /* Safari */
-	display: flex; /*отображает контейнер как блочный элемент*/	
-	justify-content: space-between
-
-#wrapMenu
-	width: 100%
-	height: 100px
-
-#baseMenu
-	a
-		color: white
-
-	a:after
-		background-color: white
-
-.menu
-	display: -webkit-flex; /* Safari */
-	display: flex; /*отображает контейнер как блочный элемент*/
-	list-style: none;
-	align-items: center
-
-	li
-		padding: 25px
-		color: white
-		font-size: 120%
-
-#leftMenu
-	margin-left: 5%
-
-	div
-		background-image: url(../../../svg/logo.svg)
-		width: 60px
-		height: 60px
-
-	li:nth-child(1)
-		padding-right: 8px
-
-	li:nth-child(2)
-		padding-left: 0
-
-#rightMenu
-	margin-right: 5%
-
-	.registration
-		border: solid 1px white
-		padding: 4px 9px 5px 9px
-		margin: 21px 16px 20px 16px
-
-		button
-			background-color: transparent
-			border: none
-			color: white
-			font-weight: 100
-			font-size: 100%		
-
-		button:hover
-			font-weight: 100
-
-.hr
-	width: 100px
-	opacity: 0
-
-	div
-		height: 1px
-		border-top: solid 1px $d-d-gray
-
-#section2,
-#section3
-
-	h2,
-	h3,
-	h5
-		font-weight: 100
-		text-align: center
+	#section1
 		opacity: 0
 
-	h2
-		margin-top: 15px
-
-	h3
-		margin-top: 20px
-		font-weight: 300
-
-	img
-		width: 80%
-		opacity: 0
-
-	.verticalFlex
-		justify-content: center
-
-	#verticalWrapUl
-		height: 80%
-
-	#horizontalWrapUl
-		width: 90%	
-	
-#section2
-	background: -moz-linear-gradient(top, #ffffff 0%, #EFEFEF 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 0%,#EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-#section3
-	background: -moz-linear-gradient(top, #EFEFEF 0%, #e5e5e5 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #EFEFEF 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #EFEFEF 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-
-#section4
-	background: -moz-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #e5e5e5 0%, #EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-
-	.numberOfResp
-		width: 100%
-
-	#baseSection4Ul
-		justify-content: flex-end
-		margin-top: 40px
-
-	.horizontalFlex
-		justify-content: space-between
-
-
-	p
-		text-align: center
-		font-weight: 300
-		font-size: 220%
-		padding-bottom: 7px
-		opacity: 0
-	
-	img
-		width: 400px
-		opacity: 0
-
-	.textSection4
-		width: 80%
-
-#section5
-	background: -moz-linear-gradient(top, #EFEFEF 0%, #ffffff 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #EFEFEF 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #EFEFEF 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	
-	h1
-		opacity: 0
-
-	p
-		text-align: center
-		font-size: 180%
-
-	img
-		width: 160px
-
-	.wrapLiSection5
-		width: 200%
-
-	#centerUl
-		opacity: 0
-
-	.arrow
-		width: 800px
-		opacity: 0
-
-	.verticalFlex
-		justify-content: space-around
-		.horizontalFlex
-			padding-bottom: 70px
-
-#section6
-	width: 100%
-	height: 100%	
-	background-image: url(../../../img/sl6img1.jpg)	
-	background-size: cover	
-	
-	h3
-		color: white
-		font-weight: 400
-		opacity: 0
-
-
-	p
-		text-align: center
-		font-size: 180%	
-		color: white
-		font-weight: 300
-		opacity: 0
-
-	.hr
-
-		div
-			border-top: solid 1px white
-	
-	.hr:nth-child(2)
-		width: 130px
-
-	.verticalFlex
-		justify-content: space-around	
-		height: 60%
-	
-	li:nth-child(3)
-		width: 65%
-
-#section7
-	width: 100%
-	height: 100%	
-	background-image: url(../../../img/sl7img1.jpg)	
-	background-size: cover	
-	background-position: center
-
-#modalRegistration	
-	position: fixed
-	z-index: 9999
-	width: 100%
-	height: 100%	
-	.overlay
-		background-color: rgba(54,54,54,.9)
+	.sectionWrap
 		width: 100%
 		height: 100%
-		margin: 0
+		background-image: url(../../../img/sl1img1.jpg)
+		background-size: cover
+
+		.menuLi
+			width: 100%	
+			margin-bottom: 130px
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5
+			color: white
+
+		h1
+			font-size: 460%
+			font-weight: 900
+			margin: -2px 0 40px 0
+		
+		h3
+			font-weight: 100
+		
+		.titleText
+			text-align: center
+
+	.verticalFlex
+		width: 100%
+		height: 100%
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex			
+		-webkit-align-items: center
+	    -ms-flex-align: center
+	    align-items: center
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column	
+
+	.horizontalFlex
+		width: 100%
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex		
+		-webkit-justify-content: space-between
+	    -ms-flex-pack: justify
+	    justify-content: space-between
+
+	#wrapMenu
+		width: 100%
+		height: 100px
+
+	#baseMenu
+		a
+			color: white
+
+		a:after
+			background-color: white
+
+	.menu
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex		
+		list-style: none
+		-webkit-align-items: center
+	    -ms-flex-align: center
+	    align-items: center
+
+		li
+			padding: 25px
+			color: white
+			font-size: 120%
+
+	#leftMenu
+		margin-left: 5%
+
+		div
+			background-image: url(../../../svg/logo.svg)
+			width: 60px
+			height: 60px
+
+		li:nth-child(1)
+			padding-right: 8px
+
+		li:nth-child(2)
+			padding-left: 0
+
+	#rightMenu
+		margin-right: 5%
+
+		.registration
+			border: solid 1px white
+			padding: 4px 9px 5px 9px
+			margin: 21px 16px 20px 16px
+
+			button
+				background-color: transparent
+				border: none
+				color: white
+				font-weight: 100
+				font-size: 100%		
+
+			button:hover
+				font-weight: 100
+
+	.hr
+		width: 100px
+		opacity: 0
+
+		div
+			height: 1px
+			border-top: solid 1px $d-d-gray
+
+	#section2,
+	#section3
+
+		h2,
+		h3,
+		h5
+			font-weight: 100
+			text-align: center
+			opacity: 0
+
+		h2
+			margin: 40px
+
+		h3
+			margin-top: 20px
+			font-weight: 300
+
+		img
+			width: 80%
+			opacity: 0
+
+		.verticalFlex
+			-webkit-justify-content: center
+	        -ms-flex-pack: center
+	        justify-content: center
+
+		#verticalWrapUl
+			height: 80%
+
+		#horizontalWrapUl
+			width: 90%	
+		
+	#section2
+		background: -moz-linear-gradient(top, #ffffff 0%, #EFEFEF 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffffff 0%,#EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffffff 0%,#EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		#verticalWrapUl
+			height: auto
+		.verticalFlex
+			height: auto	
+
+	#section3
+		background: -moz-linear-gradient(top, #EFEFEF 0%, #e5e5e5 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #EFEFEF 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #EFEFEF 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
+		.verticalFlex
+			height: auto
+
+	#section4
+		background: -moz-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #e5e5e5 0%, #EFEFEF 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #e5e5e5 0%, #EFEFEF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
+
+		.numberOfResp
+			width: 100%
+
+		#baseSection4Ul
+			-webkit-justify-content: flex-end
+	        -ms-flex-pack: end
+	        justify-content: flex-end
+			margin-top: 40px
+
+		.horizontalFlex
+			-webkit-justify-content: space-between
+	        -ms-flex-pack: justify
+	        justify-content: space-between
+
+
+		p
+			text-align: center
+			font-weight: 300
+			font-size: 220%
+			padding-bottom: 7px
+			opacity: 0
+		
+		img
+			width: 400px
+			opacity: 0
+
+		.textSection4
+			width: 80%
+
+	#section5
+		background: -moz-linear-gradient(top, #EFEFEF 0%, #ffffff 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #EFEFEF 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #EFEFEF 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		
+		h1
+			opacity: 0
+
+		p
+			text-align: center
+			font-size: 180%
+
+		img
+			width: 160px
+
+		.wrapLiSection5
+			width: 200%
+
+		#centerUl
+			opacity: 0
+
+		.arrow
+			width: 800px
+			opacity: 0
+
+		.verticalFlex
+			-webkit-justify-content: space-around
+	        -ms-flex-pack: distribute
+	        justify-content: space-around
+			.horizontalFlex
+				padding-bottom: 70px
+
+	#section6
+		width: 100%
+		height: 100%	
+		background-image: url(../../../img/sl6img1.jpg)	
+		background-size: cover	
+		
+		h3
+			color: white
+			font-weight: 400
+			opacity: 0
+
+
+		p
+			text-align: center
+			font-size: 180%	
+			color: white
+			font-weight: 300
+			opacity: 0
+
+		.hr
+
+			div
+				border-top: solid 1px white
+		
+		.hr:nth-child(2)
+			width: 130px
+
+		.verticalFlex
+			-webkit-justify-content: space-around
+	        -ms-flex-pack: distribute
+	        justify-content: space-around	
+			height: 60%
+		
+		li:nth-child(3)
+			width: 65%
+
+	#section7
+		width: 100%
+		height: 100%	
+		background-image: url(../../../img/sl7img1.jpg)	
+		background-size: cover	
+		background-position: center
+
+	#modalRegistration	
 		position: fixed
-	.visible
-		width: 40%
-		height: 80%
-		margin: 5% 30%
-		background-color: white
-		color: $d-d-gray
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray
+
+@media (max-width: 1279px)
+
+	.sectionWrap
+
+		h1
+			font-size: 360%
+		
+		.menuLi
+			margin-bottom: 180px		
+
+	#section2,
+	#section3
+
+		h2
+			font-size: 220%
+
+		h3
+			font-size: 170%
+
+		p
+			font-size: 120%
+
+		.verticalFlexMargin
+			margin-top: 20px
 
 
+	#section4
 
+		#baseSection4Ul
+			margin-top: 0px
 
+		p
+			font-size: 190%
 
+	#section5
 
+		p
+			text-align: center
+			font-size: 130%
 
+		img
+			width: 180px
 
+		#baseSection5Ul
+			height: 90%
 
-
-
-
-
-
-
+		.arrow
+			width: 650px
 
 	
+
+	/*#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/
+
+@media (orientation: landscape) and (max-width: 1024px)
+
+	.sectionWrap
+		background-image: url(../../../img/sl1img1_dark.jpg)
+	
+	.menu
+		li
+			font-size: 107%
+
+	.sectionWrap
+
+		.menuLi
+			margin-bottom: 80px	
+
+		h1
+			font-size: 260%
+
+		h3
+			font-weight: 200
+
+		h5
+			font-size: 190%	
+			margin: 50px 65px
+
+
+	#section2,
+	#section3
+
+		h2
+			font-size: 200%
+
+		h3
+			font-size: 150%
+
+		h5
+			font-size: 100%
+
+		.verticalFlexMargin
+			margin-top: 0px
+		
+	#section4
+
+		#baseSection4Ul
+			margin-top: 0px
+
+		p
+			font-size: 150%
+
+		img
+			width: 300px	
+			padding-top: 80px;
+
+
+	#section5
+
+		p
+			text-align: center
+			font-size: 105%
+
+		img
+			width: 150px
+
+		#baseSection5Ul
+			height: 85%
+
+		.arrow
+			width: 500px
+
+	/*#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/
+	
+@media (orientation: landscape) and (max-width: 768px)
+	#baseMenu
+		margin-top: 10px
+
+	.sectionWrap
+		background-image: url(../../../img/sl1img1_dark.jpg)	
+
+	.menu
+		li
+			font-size: 100%
+			padding: 5px
+	#rightMenu
+		margin-right: 1%
+
+	#leftMenu
+		margin-left: 3%
+
+	.sectionWrap
+
+		.menuLi
+			margin-bottom: 0px			
+
+		h1
+			font-size: 170%
+
+		h3
+			font-size: 120%	
+			font-weight: 300
+
+		h5
+			font-size: 120%	
+			margin: 10px 80px
+
+	#section2,
+	#section3
+
+		h2
+			font-size: 120%
+			font-weight: 300
+			margin: 0 0 20px 0
+			
+		h3
+			font-size: 90%
+			font-weight: 500
+
+		h5
+			font-size: 80%
+			font-weight: 300
+
+		.verticalFlexMargin
+			margin-top: 0px	
+	
+	#section4
+
+		#baseSection4Ul
+			margin-top: 0px
+
+		p
+			font-size: 100%
+
+		img
+			width: 150px	
+			padding-top: 0px;	
+
+	#section5
+
+		p
+			text-align: center
+			font-size: 80%
+
+		img
+			width: 120px
+
+		#baseSection5Ul
+			height: 85%
+
+		.arrow
+			width: 500px	
+
+		.wrapLiSection5
+			height: 67%
+
+	#section6
+		background-image: url(../../../img/sl6img1_dark.jpg)	
+
+		p
+			font-size: 140%	
+			font-weight: 400
+
+@media (orientation: portrait) and (max-width: 1024px)
+
+	.sectionWrap
+		h1
+			font-size: 460%
+			font-weight: 900
+			margin: 60px 40px
+		
+		h3
+			font-weight: 300
+			font-size: 260%
+			margin: 0 40px
+
+		h5
+			margin-top: 100px
+			font-size: 290%
+			margin: 120px 120px 0px 120px
+
+
+	.verticalFlex, .horizontalFlex
+		width: 100%
+		height: 100%
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex			
+		-webkit-align-items: center
+	    -ms-flex-align: center
+	    align-items: center
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column	
+
+	.menu
+		li
+			font-size: 220%
+
+	#leftMenu
+		margin-left: 0
+		margin-top: 60px
+
+		div
+			width: 120px
+			height: 120px
+
+		li:nth-child(1)
+			padding-right: 0
+
+	#rightMenu
+		margin-right: 0	
+
+	#section2,
+	#section3
+		h2
+			margin: 30px
+
+		h3
+			margin-top: 10px
+			font-weight: 300
+
+		h5
+			margin-bottom: 45px
+
+		.verticalFlexMargin
+			margin-top: 0px		
+
+		img
+			width: 65%
+			opacity: 0
+
+	#section3
+		#horizontalWrapUl
+			margin-top: 35px	
+
+	#section4
+		#baseSection4Ul
+			-webkit-justify-content: center
+	        -ms-flex-pack: center
+	        justify-content: center
+			margin-top: 40px
+		p
+			text-align: center
+			font-weight: 300
+			font-size: 190%
+			padding-bottom: 7px
+			opacity: 0
+		
+		img
+			width: 0px
+			visibility: hidden
+
+	#section5
+		
+		p
+			text-align: center
+			font-size: 130%
+
+		img
+			width: 195px
+
+
+		.wrapLiSection5
+			width: 80%
+
+		.arrow
+			width: 0px
+			visibility: hidden
+
+		.verticalFlex
+			.horizontalFlex
+				padding-top: 30px
+				padding-bottom: 0px;
+
+	#section6
+		background-image: url(../../../img/sl6img1_dark.jpg)	
+
+		p
+			text-align: center
+			font-size: 200%	
+			color: white
+			font-weight: 400
+			opacity: 0
+		
+
+
+		.verticalFlex
+			height: 40%
+		
+
+
+	#section7
+		width: 100%
+		height: 100%	
+		background-image: url(../../../img/sl7img1.jpg)	
+		background-size: cover	
+		background-position: center
+
+	/*#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/
+		
+@media (orientation: portrait) and (max-width: 768px)
+
+	.sectionWrap
+		h1
+			font-size: 360%
+			font-weight: 900
+			margin: 40px
+		
+		h3
+			font-weight: 500
+			font-size: 200%
+			margin: 0 40px
+
+		h5
+			margin-top: 100px
+			font-size: 200%
+			margin: 100px 100px 0px 100px
+
+	.menu
+		li
+			font-size: 200%
+			padding: 18px
+
+	#section4
+		#baseSection4Ul
+
+		p
+			font-size: 150%
+
+	#section5
+
+		img
+			width: 105px
+
+	#section6
+		li:nth-child(3)
+			width: 75%	
+		h3
+			margin-bottom: 40px	
+
+
+	#section7
+		width: 100%
+		height: 100%	
+		background-image: url(../../../img/sl7img1.jpg)	
+		background-size: cover	
+		background-position: center
+
+	/*#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/
+	
+@media (orientation: portrait) and (max-width: 600px)
+	.sectionWrap
+		h1
+			font-size: 360%
+			font-weight: 900
+			margin: 40px 40px
+		
+		h3
+			font-weight: 400
+			font-size: 200%
+			margin: 0 40px
+
+		h5
+			margin-top: 100px
+			font-size: 20%
+			margin: 10px 10px 0px 10px
+			visibility: hidden
+
+	.menu
+		li
+			font-size: 150%
+			padding: 10px
+
+	#section3
+		#horizontalWrapUl
+			margin-top: 35px		
+
+	#section4
+		#baseSection4Ul
+
+		p
+			font-size: 120%
+
+	#section5
+
+		img
+			width: 105px
+
+		.verticalFlex
+			.horizontalFlex
+				padding-top: 10px		
+
+	#section6
+		li:nth-child(3)
+			width: 75%	
+		h3
+			margin-bottom: 40px				
+
+	/*#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/
+
+@media (orientation: portrait) and (max-width: 375px)
+	.sectionWrap
+		h1
+			font-size: 200%
+			font-weight: 900
+			margin: 30px
+		
+		h3
+			font-weight: 400
+			font-size: 20%
+			margin: 0px
+			visibility: hidden
+
+		h5
+			margin-top: 100px
+			font-size: 20%
+			margin: 10px 10px 0px 10px
+			visibility: hidden
+		
+		.menuLi
+			margin-bottom: 50% !important	
+
+	.menu
+		-webkit-flex-direction: column
+       	-ms-flex-direction: column
+        flex-direction: column
+		li
+			font-size: 200%
+
+	#leftMenu
+		margin-top: 20px
+
+		div
+			width: 100px
+			height: 100px
+
+	#rightMenu
+	
+	#section2,
+	#section3
+		h2
+			margin: 30px
+			font-size: 160%
+
+		h3
+			margin-top: 20px
+			font-weight: 300
+
+		h5
+			margin-bottom: 45px
+			padding: 0 20px
+			font-size: 120%
+
+		.verticalFlexMargin
+			margin-top: 0px		
+
+		img
+			visibility: hidden
+			width: 0px	
+
+	#section5
+		
+		h1
+			visibility: hidden
+			font-size: 1%
+
+		img
+			width: 60px
+
+		p
+			font-size: 90%
+
+
+		.verticalFlex
+			.horizontalFlex
+				padding-top: 0px		
+
+	#section6
+		p
+			font-size: 120%			
+
+	/*#modalRegistration	
+		position: fixed
+		z-index: 9999
+		width: 100%
+		height: 100%	
+		.overlay
+			background-color: rgba(54,54,54,.9)
+			width: 100%
+			height: 100%
+			margin: 0
+			position: fixed
+		.visible
+			width: 40%
+			height: 80%
+			margin: 5% 30%
+			background-color: white
+			color: $d-d-gray*/
+
+
+
+
+
+
+
+
+
+
+
+		
 
